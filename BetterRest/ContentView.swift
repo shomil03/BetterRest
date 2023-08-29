@@ -76,9 +76,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("BetterRest")
                 
-                .toolbar{
-                    Button("calculate:",action: calculateBedtime)
-                }
+               
                 .onChange(of: coffeeamount, perform: { _ in calculateBedtime()
                 })
                 .onChange(of: sleephours, perform: { _ in calculateBedtime()
