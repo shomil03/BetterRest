@@ -76,7 +76,7 @@ struct ContentView: View {
                 }
                 .navigationTitle("BetterRest")
                 
-               
+//               _ in is used when we dont need the changed value , we observed value has changed so perform calculateBedtime() but we dont care to which value it is being changed
                 .onChange(of: coffeeamount, perform: { _ in calculateBedtime()
                 })
                 .onChange(of: sleephours, perform: { _ in calculateBedtime()
